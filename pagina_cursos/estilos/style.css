@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 2.7em;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;
+}
+ul{ 
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: roboto, sans-serif;
+   
+}
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.84);
+    box-shadow: 2px 2px 10px; rgba(0, 0, 0, 0.84);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(41, 13, 66);
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: blueviolet;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),  rgba(0,0,0,0.5)),url("/imagenes/robot.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+#somos-proya{
+
+}
+
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+.color-acento{
+    color: blueviolet;
+}
+
+#nuestros-programas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+#nuestros-programas .container{
+padding: 150px 12px;
+}
+#nuestros-programas p{
+    display: none;
+}
+#nuestros-programas .carta{
+    background-position: center;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+
+}
+.carta:first-child{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),  rgba(0,0,0,0.5)), url("/imagenes/html.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),  rgba(0,0,0,0.5)), url("/imagenes/javascript.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),  rgba(0,0,0,0.5)), url("/imagenes/sql.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#caracteristica .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristica li{
+    margin: 12px 0px;
+    font-weight: bold;
+
+}
+
+#aplica-ya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#aplica-ya h2{
+    font-size: 7vw;
+}
+
+#aplica-ya button{
+    font-size: 3vw;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin:0;
+    color: rgb(100, 100, 100);
+    padding: 12px;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*version escritorio*/
+
+@media (min-width:720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #somos-proya .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #somos-proya .somos-texto{
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    #somos-proya .img-container{
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.5),  rgba(0,0,0,0.5)), url("/imagenes/manos.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+        
+    }
+    #nuestros-programas .carta{
+        padding: 15px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    .carta:first-child p{
+        margin-top: 18px;
+        
+    }
+
+    .carta:nth-child(2) p{
+        margin-top: 18px;
+        
+    }
+
+    .carta:nth-child(3) p{
+        margin-top: 18px;
+        
+    }
+
+    #caracteristica{
+        background-image: url("/imagenes/codigo.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+        
+    }
+
+    #caracteristica .container{
+        text-align: initial;
+
+    }
+
+    #caracteristica ul{
+        margin-left: 100px;
+        
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+  
+
+}
+
+@media (min-width:1200px){
+    #caracteristica{
+        background-position-x:  calc(100vw - 800px);
+    }
+
+}
+
+
+
